@@ -374,6 +374,8 @@ body {
 /*-------------------------------------------------*/
 .catalog {
   font-size: 0; }
+  .catalog__body {
+    opacity: 0; }
   .catalog__header {
     padding: 12px 14px;
     color: #6dcff6;

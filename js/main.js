@@ -25,9 +25,11 @@
   }(jQuery));
 
   $(window).load(function(){
-        jQuery('.catalog__body').masonry({
+    $('.catalog__body').masonry({
         itemSelector: '.catalog__item',
         columnWidth: 285
+    }).animate({
+        opacity: 1
     })
   })
 
