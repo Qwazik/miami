@@ -24,9 +24,11 @@
     }
   }(jQuery));
 
-  
-    jQuery('.catalog__body').masonry({
+  $(window).load(function(){
+        jQuery('.catalog__body').masonry({
         itemSelector: '.catalog__item',
         columnWidth: 285
     })
+  })
+
   
