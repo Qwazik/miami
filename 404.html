@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+		*{
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		html, body {
+		  width: 100%;
+		  height: 100%;
+		  margin: 0;
+		  padding: 0;
+		  background-color: #000;
+		}
+
+
+		.bg-img {
+		  position: absolute;
+		  width: 100%;
+		  height: 100%;
+		  background-color:black;
+			background-image:
+			radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+			radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+			radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+			radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+			background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+			background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+		  
+		  
+		  opacity: .5;
+		  filter: alpha(opacity=50);
+		}
+
+		.content {
+		  font-family: 'Avenir-Next',Avenir,Helvetica,sans-serif;
+		  color: #fff;
+		  background-color: none;
+		  z-index: 2;
+		  position: absolute;
+		  top: 50%;
+		  -webkit-transform: translateY(-50%);
+		  -ms-transform: translateY(-50%);
+		  transform: translateY(-50%);
+		}
+
+		h1 {
+		  font-size: 160px;
+		  margin-bottom: 0;
+		  margin-top: 0;
+		}
+
+		h2 {
+		  margin-top: 0;
+		  max-width: 700px;
+		  font-size: 30px;
+		  width: 90%;
+		}
+
+		p {
+		  text-align: left;
+		  padding-bottom: 32px;
+		}
+
+		.btn {
+		  text-decoration: none;
+		  cursor: pointer;
+		  display: inline-block;
+		  border: 1px solid #aaa;
+		  border-radius: 40px;
+		  padding: 15px 30px;
+		  margin-right: 15px;
+		  margin-bottom: 10px;
+		  color: #fff;
+		}
+		.btn:hover {
+		  color: #e2e2e2;
+		  background: rgba(255, 255, 255, 0.1);
+		}
+		@media only screen and (min-width: 480px) {
+			.content {
+				padding-left: 10%;
+			}
+		}
+		@media only screen and (max-width: 480px) {
+			body{
+				text-align: center;
+			}
+			p{
+				text-align: center;
+			}
+		  .btn {
+
+		  	margin-right: 0;
+		    background-color: white;
+		    color: #444444;
+		    width: 90%;
+		    font-size: 16px;
+		  }
+
+		  h1 {
+		    font-size: 120px;
+		  }
+		}
+
+
+    </style>
+</head>
+<body>
+    
+  <div class='container'>
+    <div class='row content'>
+      <div class=''></div>
+      <div class=''>
+        <h1>404</h1>
+        <h2>Упс, данной страницы не существует.</h2>
+        <p>
+          Вы можете вернуться на главную.
+          <br>
+            Или сообщить нам о проблеме.
+          </br>
+        </p>
+        <a href="/" class='btn'>НА ГЛАВНУЮ</a>
+        <a href="" class='btn'>СООБЩИТЬ О ПРОБЛЕМЕ</a>
+      </div>
+    </div>
+  </div>
+  <div class='bg-img'></div>
+
+</body>
+</html>
+<!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
