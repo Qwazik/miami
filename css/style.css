@@ -213,15 +213,19 @@ Example usage in HTML:
 To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
 
 // CSS
-.icon {
-  display: inline-block;
-}
+
 
 // HTML
 <i class="icon icon-home"></i>
 */
 .icon {
   display: inline-block; }
+
+.icon-close {
+  background-image: url(../img/icon-set.png);
+  background-position: -82px -40px;
+  width: 20px;
+  height: 20px; }
 
 .icon-fb {
   background-image: url(../img/icon-set.png);
@@ -237,7 +241,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 .icon-phone {
   background-image: url(../img/icon-set.png);
-  background-position: -82px -40px;
+  background-position: -82px -60px;
   width: 16px;
   height: 22px; }
 
@@ -450,7 +454,8 @@ body {
 /*-------------------------------------------------*/
 .page-footer {
   margin-top: 10px;
-  padding: 30px 0; }
+  padding: 30px 0;
+  position: relative; }
   .page-footer__company-name {
     display: block;
     margin-bottom: 20px;
@@ -461,6 +466,56 @@ body {
     text-align: right; }
   .page-footer__social {
     margin-top: 20px; }
+  .page-footer__logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -103px; }
+
+/*-------------------------------------------------*/
+/*    popup
+/*-------------------------------------------------*/
+.popup__overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2000px;
+  background-color: black;
+  opacity: .5; }
+
+.popup__callback {
+  text-align: center;
+  -webkit-box-shadow: 0 0 20px #333333;
+          box-shadow: 0 0 20px #333333;
+  display: none;
+  width: 500px;
+  background-color: #fff;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  position: fixed;
+  left: 50%;
+  top: 200px;
+  margin-left: -250px;
+  right: 0;
+  padding: 30px; }
+
+.popup__input {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  border: 1px solid #69CBF2;
+  padding-left: 40px;
+  font-size: 20px;
+  color: black; }
+
+.popup__input--submit {
+  margin-top: 30px;
+  width: 100%;
+  display: block; }
 
 /*-------------------------------------------------*/
 /*  helper classes

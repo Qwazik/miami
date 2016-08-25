@@ -31,6 +31,34 @@
     }).animate({
         opacity: 1
     })
-  })
 
+    // popup callback
+    var popup = {
+        overlay: $('.popup__overlay'),
+        form: $('.popup__callback'),
+        close: $('.popup__close'),
+        init: function(){
+            this.listeners();
+        },
+        listeners: function(){
+            this.overlay.on('click', this.hide);
+            this.close.on('click', this.hide);
+        },
+        show: function(){
+            console.log('Открытие');
+            $('.popup__overlay').fadeIn(300);
+            $('.popup__callback').fadeIn(300);
+            return false;
+        },
+        hide: function(){
+            console.log('Закрытие');
+            $('.popup__overlay').fadeOut(300);
+            $('.popup__callback').fadeOut(300);
+            return false;
+        }
+    }
+    popup.init();
+
+    $('.callback-button').on('click', popup.show);
+  })
   

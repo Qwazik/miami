@@ -26,6 +26,13 @@
     <p class="browserupgrade">Ваш браузер  <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> для корректного отображения сайтов.</p><![endif]-->
     <div class="page">
       <!-- --------------- header ------------------->
+      <noscript>
+        <style>
+          .catalog__body{
+          	display: block;
+          }
+        </style>
+      </noscript>
       <header class="page__header page-header">
         <div class="container"><a href="#" class="page-header__logo"><img src="img/logo.png" alt=""></a>
           <div class="page-header__bottom"><a href="#" class="page-header__callback callback-button">ОБРАТНЫЙ ЗВОНОК</a>
@@ -128,9 +135,10 @@
       <!-- -------- footer ------------->
       <footer class="page__footer page-footer">
         <div class="container clearfix">
-          <div class="page-footer__left f-left"><strong class="page-footer__company-name">Название компании</strong>
+          <div class="page-footer__left f-left">
             <div class="page-header__phones abs-icon"><i class="icon icon-phone"></i><span class="block">+1 929 262 9361</span><span class="block">+1 305 331 7687</span></div>
           </div>
+          <div class="page-footer__logo"><img src="img/logo.png" alt=""></div>
           <div class="page-footer__right f-right">
             <div class="callback-button">ОБРАТНЫЙ ЗВОНОК</div>
             <div class="social page-footer__social"><a href="#" class="social__link icon icon-wats"></a><a href="#" class="social__link icon icon-viber"></a><a href="#" class="social__link icon icon-fb"></a><a href="#" class="social__link icon icon-insta"></a><a href="#" class="social__link icon icon-skype"></a></div>
@@ -138,6 +146,17 @@
         </div>
       </footer>
       <!-- -------- footer end ------------->
+      <!-- -------- popup --------------->
+      <div class="popup__overlay"></div>
+      <div class="popup__callback">
+        <div class="popup__close"></div>
+        <form action="">
+          <input type="text" placeholder="Ваше имя" class="popup__input">
+          <input type="text" placeholder="Ваш телефон" class="popup__input">
+          <button type="submit" class="callback-button popup__input--submit">Отправить</button>
+        </form>
+      </div>
+      <!-- -------- popup end --------------->
     </div>
     <!--scripts =================================================-->
     <script>window.jQuery || document.write('<script src="libs/jquery.min.js"><\/script>')</script>

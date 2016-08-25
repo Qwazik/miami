@@ -2,11 +2,12 @@
 footer.page__footer.page-footer
 	.container.clearfix
 		.page-footer__left.f-left
-			strong.page-footer__company-name Название компании
 			.page-header__phones.abs-icon
 				i.icon.icon-phone
 				span.block +1 929 262 9361
 				span.block +1 305 331 7687
+		.page-footer__logo
+			img(src="img/logo.png", alt="")
 		.page-footer__right.f-right
 			.callback-button ОБРАТНЫЙ ЗВОНОК
 			.social.page-footer__social
@@ -16,3 +17,13 @@ footer.page__footer.page-footer
 				a(href="#").social__link.icon.icon-insta
 				a(href="#").social__link.icon.icon-skype
 // -------- footer end -----------
+// -------- popup -------------
+.popup__overlay
+.popup__callback
+	.popup__close
+	form(action="")
+		input(type="text" placeholder="Ваше имя").popup__input
+		input(type="text" placeholder="Ваш телефон").popup__input
+		button(type="submit").callback-button.popup__input--submit Отправить
+
+// -------- popup end -------------
